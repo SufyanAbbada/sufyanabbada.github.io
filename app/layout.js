@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Full-stack developer with expertise in top JS frameworks. Crafting user-centric solutions with a global outlook, prioritizing performance and scalability.",
   generator: "Next.js",
-  applicationName: "Sufyan's Portfolio",
+  applicationName: "Sufyan's Profile",
   keywords: [
     "Next.js",
     "React",
@@ -28,7 +28,8 @@ export const metadata = {
     type: "profile",
     images: [
       {
-        url: `${process.env.CLOUDINARY_URL}/SufyanAbbadaFrontImageFB_qoi9hm.png`,
+        url: `${process.env.CLOUDINARY_URL}/SufyanAbbadaFrontImage-fotor-2023082364916_1_qsssxp.png`,
+        alt: "Sufyan's Photo",
       },
     ],
     url: "https://example.com/path-to-article", // Todo: Change the URL to deployed URL afterwards
