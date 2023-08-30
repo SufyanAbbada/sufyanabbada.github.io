@@ -21,3 +21,35 @@
 }
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: cadetblue;
+}
+
+#cursor {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: fixed;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  transition: transform 0.5s linear, opacity 2s ease;
+  z-index: 100;
+}
+
+.magnify-cursor {
+  cursor: url("/magnifyCursor.png"), auto;
+}
+
+.heart-cursor {
+  cursor: url("/heartCursor.png"), auto;
+}
+
+.leaf-cursor {
+  cursor: url("/leafCursor.png"), auto;
+}
