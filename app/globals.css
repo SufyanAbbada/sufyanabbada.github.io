@@ -39,7 +39,7 @@ body {
   mix-blend-mode: overlay;
   pointer-events: none;
   transition: transform 0.5s linear, opacity 2s ease;
-  z-index: 100;
+  z-index: 100; /* 100 is the highest Z-Index in the Project */
 }
 
 .magnify-cursor {
@@ -52,4 +52,8 @@ body {
 
 .leaf-cursor {
   cursor: url("/leafCursor.png"), auto;
+}
+
+.outlined-font {
+  text-shadow: 2px 2px 2px #ffffff;
 }
