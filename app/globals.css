@@ -23,7 +23,6 @@
 @tailwind utilities;
 
 body {
-  background-color: cadetblue;
 }
 
 #cursor {
@@ -54,6 +53,41 @@ body {
   cursor: url("/leafCursor.png"), auto;
 }
 
+.code-cursor {
+  cursor: url("/codeCursor.png"), auto;
+}
+
 .outlined-font {
   text-shadow: 2px 2px 2px #ffffff;
 }
+
+#about-me {
+  /* background: url("/aboutMeBG.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-image: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
+}
+
+.techStack > div {
+  @apply w-[50%] flex justify-center items-center mb-10;
+}
+
+.techImages {
+  @apply border border-dotted p-10 flex flex-wrap;
+}
+
+.techImages span {
+  @apply w-[50%] relative overflow-hidden flex justify-center items-center h-[100px];
+}
+
+.techImages p {
+  @apply absolute inset-0 flex items-center justify-center transform translate-y-full transition-transform duration-500 text-3xl;
+}
+
+.techImages img {
+  @apply transform transition-transform duration-500;
+}
+
+/* .techImages div {
+  @apply absolute inset-0 flex justify-center items-center;
+} */

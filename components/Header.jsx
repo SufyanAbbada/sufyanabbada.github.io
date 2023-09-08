@@ -11,15 +11,22 @@ export default function Header() {
   const [counter, setCounter] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
+  // const words = [
+  //   "Full-Stack Developer",
+  //   "Backend Engineer",
+  //   "Frontend Maestro",
+  //   "Database Guru",
+  //   "Security Guardian",
+  //   "3rd-party Integrations Manager",
+  //   "JavaScript Connoisseur",
+  //   "Deployment Extraordinaire",
+  // ];
+
   const words = [
-    "Full-Stack Developer",
-    "Backend Engineer",
-    "Frontend Maestro",
-    "Database Guru",
-    "Security Guardian",
-    "3rd-party Integrations Manager",
-    "JavaScript Connoisseur",
-    "Deployment Extraordinaire",
+    "Mehengi Chars",
+    "Sasti Chars",
+    "Imported Chars",
+    "Homemade Chars",
   ];
 
   useEffect(() => {
@@ -47,7 +54,7 @@ export default function Header() {
   }, [index, counter, isDeleting]);
 
   return (
-    <main className="magnify-cursor w-full bg-white h-72 xs:h-96">
+    <main className="magnify-cursor w-full h-72 xs:h-96">
       <video
         autoPlay
         loop
@@ -55,13 +62,14 @@ export default function Header() {
         preload="metadata"
         src="/video.mp4"
         poster="/SufyanPosterImage.jpg"
-        className="w-full h-72 xs:h-96 object-fill z-0 fixed opacity-70"
+        className="w-full h-72 xs:h-96 object-fill z-0 absolute opacity-70"
       ></video>
       <div className="relative flex flex-col items-center justify-center h-full">
         <h1
           className={`${tangerine.className} text-6xl xs:text-8xl mb-3 outlined-font`}
         >
-          Sufyan Abbada
+          Charsi
+          {/* Sufyan Abbada  */}
         </h1>
         <div id="changing-text" className={`${rye.className} xs:text-2xl `}>
           {words[counter].substring(0, index) || "\u00A0"}
