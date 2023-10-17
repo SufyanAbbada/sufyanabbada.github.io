@@ -984,6 +984,53 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   height: 60px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-tech-item {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 20%;
+  width: 20%;
+  max-width: 20%;
+  box-sizing: border-box;
+  padding: 0 15px; /* Adding some padding for space between items */
+}
+
+.skills-tech-image {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.skills-tech-name {
+  font-family: "Tangerine";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  color: black;
+  transition: transform 0.3s, opacity 0.3s;
+  font-size: calc(100% + 2vw);
+}
+
+.skills-tech-item:hover .skills-tech-image {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.skills-tech-item:hover .skills-tech-name {
+  opacity: 1;
+  transform: translateY(100%);
+}
+
 #colorlib-blog .owl-carousel {
   z-index: 0;
 }
