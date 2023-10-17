@@ -984,7 +984,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   height: 60px;
 }
 
-.row {
+.skills-tech-row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -996,7 +996,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   width: 20%;
   max-width: 20%;
   box-sizing: border-box;
-  padding: 0 15px; /* Adding some padding for space between items */
+  padding: 0 15px;
 }
 
 .skills-tech-image {
@@ -1018,7 +1018,24 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   opacity: 0;
   color: black;
   transition: transform 0.3s, opacity 0.3s;
-  font-size: calc(100% + 2vw);
+  font-size: 5rem;
+}
+@media (max-width: 992px) {
+  .skills-tech-name {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-tech-name {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-tech-name {
+    font-size: 1.5rem;
+  }
 }
 
 .skills-tech-item:hover .skills-tech-image {
@@ -1468,7 +1485,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   width: 20px;
   height: 2px;
   color: #000;
