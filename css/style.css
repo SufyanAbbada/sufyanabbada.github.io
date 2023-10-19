@@ -388,7 +388,7 @@ header .colorlib-navbar-brand {
 header .colorlib-navbar-brand .colorlib-logo {
   font-size: 20px;
   text-transform: uppercase;
-  color: #000;
+  color: white;
   font-weight: 400;
   letter-spacing: 5px;
   padding: 7px;
@@ -418,6 +418,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 #colorlib-blog,
 #colorlib-testimony,
 #colorlib-progress,
+#colorlib-education,
 #colorlib-contact,
 #colorlib-about {
   padding: 10em 0;
@@ -431,6 +432,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   #colorlib-blog,
   #colorlib-testimony,
   #colorlib-progress,
+  #colorlib-education,
   #colorlib-contact,
   #colorlib-about {
     padding: 5em 0;
@@ -1212,6 +1214,70 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   background: #fff;
 }
 
+.education-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.education-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.education-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.education-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.education-item ul {
+  padding-left: 20px;
+}
+
+.education-item ul li {
+  padding-bottom: 10px;
+}
+
+.education-item:last-child {
+  padding-bottom: 0;
+}
+
+.education-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
 #colorlib-testimony .owl-theme .owl-dots .owl-dot.active span,
 #colorlib-testimony .owl-theme .owl-dots .owl-dot:hover span {
   height: 3px;
@@ -1619,6 +1685,10 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 .contact-info li a {
   color: #ca82f8;
+}
+
+#form-message {
+  resize: none;
 }
 
 .form-control {
